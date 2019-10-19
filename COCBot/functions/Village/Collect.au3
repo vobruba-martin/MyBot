@@ -77,9 +77,8 @@ Func CollectLootCart()
 
 	SetLog("Searching for a Loot Cart", $COLOR_INFO)
 
-	Local $aLootCart = decodeSingleCoord(findImage("LootCart", $g_sImgCollectLootCart, "ECD", 1, True))
+	Local $aLootCart[2] = [108, 210]
 	If UBound($aLootCart) > 1 Then
-		If isInsideDiamond($aLootCart) Then
 			If IsMainPage() Then ClickP($aLootCart, 1, 0, "#0330")
 			If _Sleep($DELAYCOLLECT1) Then Return
 
@@ -112,9 +111,6 @@ Func CollectLootCart()
 					EndIf
 				EndIf
 			EndIf
-		Else
-			SetLog("LootCart is not inside the Village (X: " & $aLootCart[0] & " | Y: " & $aLootCart[1] & ")", $COLOR_INFO)
-		EndIf
 	Else
 		SetLog("No Loot Cart found on your Village", $COLOR_SUCCESS)
 	EndIf
