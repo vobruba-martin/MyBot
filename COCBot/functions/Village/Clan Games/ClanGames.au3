@@ -702,20 +702,8 @@ Func ClanGamesChallenges($sReturnArray, $makeIni = False, $sINIPath = "", $bDebu
 			["Edrag", 					"Lavahound", 					 9,  3, 1]]   ; Earn 2-5 Stars from Multiplayer Battles using 3 Lava Hounds		|3h-8h	|40-100
 
 	Local $GroundTroopChallenges[14][5] = [ _
-			["Arch", 					"Archer", 						 1, 30, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 30 Barbarians		|3h-8h	|40-100
-			["Barb", 					"Barbarian", 					 1, 30, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 30 Archers		|3h-8h	|40-100
 			["Giant", 					"Giant", 						 1, 10, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 10 Giants			|3h-8h	|40-100
-			["Gobl", 					"Goblin", 						 2, 20, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 20 Goblins		|3h-8h	|40-100
-			["Wall", 					"WallBreaker", 					 3,  6, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 6 Wall Breakers	|3h-8h	|40-100
-			["Wiza", 					"Wizard", 						 5, 12, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 12 Wizards		|3h-8h	|40-100
-			["Heal", 					"Healer", 						 6,  3, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 3 Healers			|3h-8h	|40-100
-			["Hogs", 					"HogRider", 					 7, 10, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 10 Hog Riders		|3h-8h	|40-100
-			["Mine", 					"Miner", 						10,  8, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 8 Miners			|3h-8h	|40-100
-			["Pekk", 					"Pekka", 						 8,  2, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 2 P.E.K.K.As		|3h-8h	|40-100
-			["Witc", 					"Witch", 						 9,  4, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 4 Witches			|3h-8h	|40-100
-			["Bowl", 					"Bowler", 						10,  8, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 8 Bowlers			|3h-8h	|40-100
-			["Valk", 					"Valkyrie", 					 8,  8, 1], _ ; Earn 2-5 Stars from Multiplayer Battles using 8 Valkyries		|3h-8h	|40-100
-			["Gole", 					"Golem", 						 8,  2, 1]]   ; Earn 2-5 Stars from Multiplayer Battles using 2 Golems			|3h-8h	|40-100
+			["Wiza", 					"Wizard", 						 5, 12, 1]]   ; Earn 2-5 Stars from Multiplayer Battles using 12 Wizards		|3h-8h	|40-100
 
 	Local $BattleChallenges[16][5] = [ _
 			["Start", 					"Star Collector", 				 3,  1, 8], _ ; Collect a total of 6-18 stars from Multiplayer Battles			|8h-2d	|100-600
@@ -723,17 +711,8 @@ Func ClanGamesChallenges($sReturnArray, $makeIni = False, $sINIPath = "", $bDebu
 			["PileOfVictores", 			"Pile Of Victories", 			 3,  1, 8], _ ; Win 2-8 Multiplayer Battles										|8h-2d	|100-600
 			["StarThree", 				"Hunt for Three Stars", 		10,  5, 8], _ ; Score a perfect 3 Stars in Multiplayer Battles					|8h 	|200
 			["WinningStreak", 			"Winning Streak", 				 9,  5, 8], _ ; Win 2-8 Multiplayer Battles in a row							|8h-2d	|100-600
-			["SlayingTitans", 			"Slaying The Titans", 			11,  2, 5], _ ; Win 5 Multiplayer Battles In Tital LEague						|5h		|300
 			["NoHero", 					"No Heroics Allowed", 			 3,  5, 8], _ ; Win stars without using Heroes									|8h		|100
-			["NoMagic", 				"No-Magic Zone", 				 3,  5, 8], _ ; Win stars without using Spells									|8h		|100
-			["Scrappy6s", 				"Scrappy 6s", 					 6,  1, 8], _ ; Gain 3 Stars Against Town Hall level 6							|8h		|200
-			["Super7s", 				"Super 7s", 					 7,  1, 8], _ ; Gain 3 Stars Against Town Hall level 7							|8h		|200
-			["Exciting8s", 				"Exciting 8s", 					 8,  1, 8], _ ; Gain 3 Stars Against Town Hall level 8							|8h		|200
-			["Noble9s", 				"Noble 9s", 					 9,  1, 8], _ ; Gain 3 Stars Against Town Hall level 9							|8h		|200
-			["Terrific10s", 			"Terrific 10s", 				10,  1, 8], _ ; Gain 3 Stars Against Town Hall level 10							|8h		|200
-			["Exotic11s", 			    "Exotic 11s", 					11,  1, 8], _ ; Gain 3 Stars Against Town Hall level 11							|8h		|200
-			["Triumphant12s", 			"Triumphant 12s", 				12,  1, 8], _ ; Gain 3 Stars Against Town Hall level 12							|8h		|200
-			["AttackUp", 				"Attack Up", 					 3,  1, 8]]   ; Gain 3 Stars Against Town Hall a level higher					|8h		|200
+			["NoMagic", 				"No-Magic Zone", 				 3,  5, 8]]   ; Win stars without using Spells									|8h		|100
 
 	Local $DestructionChallenges[30][5] = [ _
 			["Cannon", 					"Cannon Carnage", 				 3,  1, 1], _ ; Destroy 5-25 Cannons in Multiplayer Battles					|1h-8h	|75-350
@@ -770,9 +749,7 @@ Func ClanGamesChallenges($sReturnArray, $makeIni = False, $sINIPath = "", $bDebu
 	Local $MiscChallenges[5][5] = [ _
 			["Gard", 					"Gardening Exercise", 			 3,  1, 8], _ ; Clear 5 obstacles from your Home Village or Builder Base		|8h	|50
 			["DonateSpell", 			"Donate Spells", 				 9,  3, 8], _ ; Donate a total of 10 housing space worth of spells				|8h	|50
-			["DonateTroop", 			"Helping Hand", 				 6,  2, 8], _ ; Donate a total of 100 housing space worth of troops				|8h	|50
-			["BattleBlimpBoogie", 		"Battle Blimp", 				12,  5, 1], _ ; Earn 2-4 Stars from Multiplayer Battles using 1 Battle Blimp	|3h-8h	|40-300
-			["WallWreckerWallop", 		"Wall Wrecker", 				12,  5, 1]]   ; Earn 2-5 Stars from Multiplayer Battles using 1 Wall Wrecker 	|3h-8h	|40-100
+			["DonateTroop", 			"Helping Hand", 				 6,  2, 8]]   ; Donate a total of 100 housing space worth of troops				|8h	|50
 
 
 
